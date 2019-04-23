@@ -87,8 +87,13 @@ img {
         cursor: pointer;
     }
 
+/*The image margin in the post was set .*/
+span.imageblock {
+    margin: 10px 0px;
+}
+	
 pre{
-	margin-top: 10px;
+	margin: 10px 0px;
 	padding:0px;
 }
 
