@@ -90,6 +90,7 @@ img {
 /*The image margin in the post was set .*/
 span.imageblock {
     margin: 10px 0px;
+	box-shadow: 1px 2px 4px
 }
 	
 pre{
