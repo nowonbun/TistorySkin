@@ -6,13 +6,13 @@ var myUrl = "http://nowonbunskinex.tistory.com";
 
 /*OnLoad*/
 initAdsense();
-initLogo();
+/*initLogo();*/
 initMain();
 initAside();
 initList();
 initComment();
-initpaging();
-initListRate();
+/*initpaging();*/
+/*initListRate();*/
 /*initFooter();*/
 $(function(){
 	initMenu();
@@ -24,10 +24,10 @@ $(function(){
 
 /*onResize*/
 $(window).resize(function(){
-	initLogo();
+	/*initLogo();*/
 	initAside();
 	initMain();
-	initListRate();
+	/*initListRate();*/
 	preWidth = $(window).width();
 });
 /*애드센스 적용*/
@@ -50,14 +50,14 @@ function initAdsense(){
 	}
 }
 /*로고 중앙 위치*/
-function initLogo(){
+/*function initLogo(){
 	headerLogoPos = ($(window).width()/2)-($("header div.navbar-header > a:nth-child(2)").width()/2);
 	$("header div.navbar-header > a:nth-child(2)").css("left",headerLogoPos);
 	
 	if($("div.searchList").length > 0){
 		$("div.entryNotice").remove();
 	}
-}
+}*/
 /*메뉴 만들기*/
 function initMenu(){
 	/*카테고리 메뉴 생성*/
@@ -143,6 +143,9 @@ function initMain(){
 	main_min_height -= $("section.paging").outerHeight(true);
 	//footer padding :10 main-margin:15;
 	main_min_height -= 25;
+	if(isMobile()){
+		main_min_height -= 6;
+	}
 	$("main").css("min-height",main_min_height);
 }
 /*메뉴 상태.. 처음 누르면 메뉴가 나옴. 다시 누르면 메뉴가 들어감*/
@@ -310,7 +313,7 @@ function commnet(){
 	}
 }
 /*페이징 만들기*/
-function initpaging(){
+/*function initpaging(){
 	maxdom = $("section.paging > span.numbox > a:nth-last-of-type(1) > span");
 	//maxurl = maxdom.parent().prop("href");
 	selectdom = $("section.paging > span.numbox > a > span.selected");
@@ -319,11 +322,12 @@ function initpaging(){
 	html += "<span class='splite'>/</span>";
 	html += "<span class='max'>"+maxdom.html()+"</span>";
 	$("section.paging > span.numbox").html(html);
-}
+}*/
 /*리스트시 비율 재조정하기*/
+/*
 function initListRate(){
 	$("article > div.searchListEntity").each(function(){
-		/*이미지가 있을 때*/
+		//이미지가 있을 때
 		if($(this).children("a.t-photo").css("display") != "none"){
 			if($(this).children("a.t-photo").children("div.thumbnail").children("div.cropzone").children("img").prop("src") != null){
 				imgWidthRate = (150 / $(this).width()) * 100;
@@ -332,7 +336,7 @@ function initListRate(){
 				return;
 			}
 		}
-		/*이미지가 없을 때*/
+		//이미지가 없을 때
 		$(this).children("div.list-body").css("width","100%");
 	});
-}
+}*/

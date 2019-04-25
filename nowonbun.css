@@ -6,6 +6,9 @@
 	font-family: 'childpaper';
 	src: url('childpaper.woff') format('truetype');
 }
+body, header, footer{
+	min-width:350px;
+}
 /*******************
 *     해더 처리
 ********************/
@@ -29,10 +32,19 @@ div.tistorytoolbar{
 	display:none;
 }
 /*해더 타이틀*/
+div.navbar-header > a.title{
+	left: calc(100vw/2 - 50px);
+}
+@media screen and (max-width:350px) {
+	div.navbar-header > a.title{
+		display:none;
+	}
+}
 div.navbar-header > a.title > span{
 	color: #fff;
 	font-size: 25px;
 	margin-right:10px;
+	
 }
 /*해더 타이틀과 메뉴버튼*/
 div.navbar-header > a{
@@ -130,7 +142,10 @@ div.searchList p{
 /*본문 리스트(검색결과)*/
 article > div.searchListEntity{
     /*padding: 0px 50px;*/
-	border-bottom:1px solid #ccc;
+	/*border-bottom:1px solid #ccc;*/
+	box-shadow: 2px 2px 4px;
+    margin: 10px 0px;
+    padding: 0px 30px;
 }
 /*본문 리스트(검색결과)*/
 article > div.searchListEntity > div.list-body{
@@ -236,7 +251,8 @@ aside#leftside{
 	border:1px solid #000;
 	overflow:auto;
 	display:none;
-	top:0px
+	top:0px;
+	box-shadow:2px 2px 4px;
 }
 /*사이드메뉴*/
 aside#leftside.on{
@@ -405,6 +421,7 @@ aside#rightside{
 	/*transition: left 50ms linear;*/
 	top: 0px;
 	max-width:calc(90vw);
+	box-shadow: -2px 2px 4px;
 }
 aside#rightside > div ol{
 	list-style:none;
@@ -660,13 +677,31 @@ section.paging{
     font-size: 20px;
 	margin-bottom:15px;
 }
+section.paging  a{
+	text-decoration:none;
+}
 section.paging > a{
 	margin:0px 10px;
 	color:#222;
-	text-decoration:none;
-	top:4px;
+	font-size: 1.2rem;
+	/*top:4px;*/
 }
-section.paging > span.numbox > span.selected,
+section.paging > span.numbox > a.num > .selected{
+	/*color: black;*/
+    cursor: default;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid;
+    padding: 2px;
+    border-radius: 53px;
+	background: #000;
+    color: #fff;
+}
+section.paging  .no-more-prev,
+section.paging .no-more-next{
+	display:none;
+}
+/*section.paging > span.numbox > span.selected,
 section.paging > span.numbox > span.max{
     display: inline-block;
     background-color: #222;
@@ -674,7 +709,7 @@ section.paging > span.numbox > span.max{
     border-radius: 10px;
     color: #fff;
     margin: 0 20px;
-}
+}*/
 /*******************
 *      푸터 처리
 ********************/
@@ -706,6 +741,10 @@ div.widget-footer table {
 div.widget-footer td {
 	text-align: right;
 }
+/*소스 보기 깨짐 현상*/
+.hljs-ln-numbers .hljs-ln-line{
+	white-space: pre;
+}
 /*******************
 *      모바일 처리
 ********************/
@@ -734,6 +773,57 @@ div.widget-footer td {
 		margin-right: 0px;
 		margin-left: 0px;
 	}
+	.post-article{
+		margin: 0px -10px;
+	}
+	.titleWrap h2, main div.title{
+		font-size: 2.2rem;
+	}
+	main div.article {
+		font-size: 1.5rem;
+	}
+	article > div.searchListEntity{
+		padding: 0px 5px;
+	}
+	.h3, h3 {
+		font-size: 2rem;
+	}
+	body, 
+	div.actionTrail ul.nav.nav-tabs.nav-justified a,
+	div.commentCnt,
+	div.commentCnt,
+	div.commentList span.name, 
+	div.guestList span.name,
+	a.btnComment,
+	div.commentList p.commentContents, 
+	div.guestList p.commentContents,
+	blockquote,
+	div.searchList h3,
+	article > div.searchListEntity > div.list-body a.list-link > p.list-summary{
+		font-size:1.2rem;
+	}
+	div.searchList h3,
+	div.searchList h3>span:before,
+	div.searchList h3>span:after,
+	article > div.searchListEntity > div.list-body a.list-link > h3,
+	div.searchList h3>span{
+		font-size:1.5rem;
+	}
+	pre{
+		font-size:1rem;
+	}
+	.hljs {
+		padding:0px;
+	}
+	.hljs-ln-line{
+		margin-left:0px;
+	}
+	.hljs-ln-numbers .hljs-ln-line{
+		margin-right: 3px;
+	}
+	blockquote{
+		padding:2px;
+	}
 }
 /*******************
 *    브라우저 처리
@@ -742,6 +832,10 @@ div.widget-footer td {
 	/*사이드바가 나올때 뒤 배경흐리기*/
 	main.on{
 		/*-webkit-filter:blur(1px);*/
+	}
+	.post-article{
+		box-shadow:1px 1px 3px;
+		padding:20px;
 	}
 }
 /*******************
