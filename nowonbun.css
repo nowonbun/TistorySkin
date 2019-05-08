@@ -7,7 +7,7 @@
 	src: url('childpaper.woff') format('truetype');
 }
 body, header, footer{
-	min-width:350px;
+	min-width:320px;
 }
 /*******************
 *     해더 처리
@@ -199,7 +199,7 @@ article > div.searchListEntity > div.list-body a.list-link > p.list-summary{
 }
 /*본문 리스트(검색결과)*/
 article > div.searchListEntity > div.list-body div.list-meta.ie-dotum{
-	width:200px;
+	/*width:200px;*/
 }
 /*본문 리스트(검색결과)*/
 article > div.searchListEntity > div.list-body div.list-meta.ie-dotum > a {
@@ -799,7 +799,9 @@ div.widget-footer td {
 	div.guestList p.commentContents,
 	blockquote,
 	div.searchList h3,
-	article > div.searchListEntity > div.list-body a.list-link > p.list-summary{
+	article > div.searchListEntity > div.list-body a.list-link > p.list-summary,
+	div.commentSet, 
+	div.guestWrite{
 		font-size:1.2rem;
 	}
 	div.searchList h3,
