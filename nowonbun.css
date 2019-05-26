@@ -3,8 +3,8 @@
 *     공통 처리
 ********************/
 @font-face {
-	font-family: 'childpaper';
-	src: url('childpaper.woff') format('truetype');
+	/*font-family: 'childpaper';
+	src: url('childpaper.woff') format('truetype');*/
 }
 body, header, footer{
 	min-width:320px;
@@ -25,7 +25,7 @@ section.headerspace{
 }
 /*폰트 설정*/
 body {
-	font-family: childpaper;
+	/*font-family: childpaper;*/
 }
 /*오른쪽 상단 로그인 하는 기본 툴*/
 div.tistorytoolbar{
@@ -103,6 +103,7 @@ span.menuSpan{
     border-style: double;
     width: 60px;
     text-align: center;
+	font-size: 15px;
 }
 span.menuSpan:hover{
 	background-color:#81a9db;
@@ -325,7 +326,8 @@ ul.bs-glyphicons-list > li > span:first-child{
 }
 /*사이드바 아이콘 글씨*/
 ul.bs-glyphicons-list > li > span:last-child{
-	font-size:10px;
+	/*font-size:10px;*/
+	font-size:8px;
 }
 /*사이드바 메뉴리스트 점 빼기*/
 div.side-list ul{
@@ -440,7 +442,8 @@ aside#rightside h2{
 /*오른쪽 사이드바*/
 aside#rightside h2.side-header > a{
     float: left;
-    width: 45px;
+    /*width: 45px;*/
+	width: 50px;
     height: 45px;
     padding: 3px;
 	padding-left: 6px;
@@ -463,10 +466,12 @@ aside#rightside h2.side-header > a:hover{
 aside#rightside h2.side-header > a > span:first-child{
 	font-size:30px;
 	float:left;
+	padding-left: 5px;
 }
 /*오른쪽 사이드바*/
 aside#rightside h2.side-header > a > span:last-child{
-	font-size:10px;
+	/*font-size:10px;*/
+	font-size:8px;
 	float:left;
 }
 /*오른쪽 사이드바*/
@@ -561,7 +566,8 @@ main div.title{
 }
 /*메인글*/
 main div.article{
-	font-size:18px;
+	/*font-size:18px;*/
+	font-size:15px;
 	/*overflow-wrap: break-word;*/
 	word-wrap: break-word;
 }
@@ -785,7 +791,8 @@ div.widget-footer td {
 		font-size: 2.2rem;
 	}
 	main div.article {
-		font-size: 1.5rem;
+		/*font-size: 1.5rem;*/
+		font-size: 1.2rem;
 	}
 	article > div.searchListEntity{
 		padding: 0px 5px;
