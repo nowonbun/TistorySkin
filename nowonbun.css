@@ -2,10 +2,16 @@
 /*******************
 *     공통 처리
 ********************/
-@font-face {
-	/*font-family: 'childpaper';
-	src: url('childpaper.woff') format('truetype');*/
+/*@font-face {
+	font-family: 'childpaper';
+	src: url('childpaper.woff') format('truetype');
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+body{
+	font-family: 'Noto Sans KR', sans-serif;
 }
+
 body, header, footer{
 	min-width:320px;
 }
