@@ -238,7 +238,7 @@ article > div.searchListEntity > a.t-photo img{
 	height:100%;
 }
 article p, .article p {
-	margin-bottom: 5px;
+	margin-bottom: 5px!important;
 	line-height: 25px;
 }
 /*******************
