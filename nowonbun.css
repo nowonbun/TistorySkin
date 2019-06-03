@@ -235,7 +235,8 @@ article > div.searchListEntity > a.t-photo img{
 	height:100%;
 }
 article p, .article p {
-	margin-bottom: 0px;
+	margin-bottom: 5px;
+	line-height: 25px;
 }
 /*******************
 *   왼쪽 사이드 처리
