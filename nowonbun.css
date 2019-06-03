@@ -162,6 +162,7 @@ article > div.searchListEntity > div.list-body{
     float: left;
 	/*자바스크립트 처리*/
     /*width: 75%;*/
+    padding-bottom: 15px;
 }
 /*본문 리스트(검색결과)*/
 article > div.searchListEntity > div.list-body a{
@@ -195,8 +196,10 @@ article > div.searchListEntity > div.list-body a.list-link > p.list-summary{
 	color:#000;
 	/*min-height:80px;*/
 	white-space: normal;
-    line-height: 1.2;
-    height: 3.6em;
+    /*line-height: 1.2;
+    height: 3.6em;*/
+    line-height:25px;
+    height: 75px;
 	/*white-space: nowrap;*/
     overflow: hidden;
     text-overflow: ellipsis;
