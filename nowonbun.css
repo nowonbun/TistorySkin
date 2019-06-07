@@ -865,7 +865,12 @@ div.widget-footer td {
 		padding:20px;
 	}
 	.container {
-		width: 850px!important;
+		width: 850px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 1170px;
 	}
 }
 /*******************
