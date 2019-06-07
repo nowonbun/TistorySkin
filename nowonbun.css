@@ -868,6 +868,11 @@ div.widget-footer td {
 		width: 850px;
 	}
 }
+@media screen and (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
 @media screen and (min-width: 1200px) {
 	.container {
 		width: 1170px;
