@@ -864,6 +864,9 @@ div.widget-footer td {
 		box-shadow:1px 1px 3px;
 		padding:20px;
 	}
+	.container {
+		width: 850px!important;
+	}
 }
 /*******************
 *    아이템 처리
@@ -894,10 +897,10 @@ div.adsenseFoot{
 ******************/
 .cropzone{
 	max-width: 140px;
-    max-height: 100px;
-    overflow: hidden;
+	max-height: 100px;
+	overflow: hidden;
 }
 .cropzone img{
 	width: 100%;
-    height: initial;
+	height: initial;
 }
