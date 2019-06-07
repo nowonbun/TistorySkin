@@ -11,5 +11,5 @@
 @media(min-width: 1200px) { .adsens_responsive { width: 970px; height: 90px; } }
 
 .adsenseFootDefault,.adsenseHeadDefault{
-text-align:center;
+/*text-align:center;*/
 }
