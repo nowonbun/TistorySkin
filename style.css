@@ -7,4 +7,5 @@
 /*@import url('https://nowonbun.github.io/nowonbunTheme/css/nowonbun.css');*/
 .adsens_responsive { width: 320px; height: 100px; }
 @media(min-width: 500px) { .adsens_responsive { width: 468px; height: 60px; } }
-@media(min-width: 992px) { .adsens_responsive { width: 728px; height: 90px; } }
+@media(min-width: 800px) { .adsens_responsive { width: 728px; height: 90px; } }
+@media(min-width: 992px) { .adsens_responsive { width: 970px; height: 90px; } }
