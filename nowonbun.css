@@ -851,6 +851,9 @@ div.widget-footer td {
 	blockquote{
 		padding:2px;
 	}
+	article p, .article p {
+		line-height: 20px;
+	}
 }
 /*******************
 *    브라우저 처리

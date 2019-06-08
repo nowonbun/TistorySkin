@@ -5,11 +5,29 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700');*/
 /*@import url('https://nowonbun.github.io/nowonbunTheme/css/nowonbun.css');*/
-.adsens_responsive { width: 320px; height: 100px; }
-@media(min-width: 500px) { .adsens_responsive { width: 468px; height: 60px; } }
-@media(min-width: 800px) { .adsens_responsive { width: 728px; height: 90px; } }
-@media(min-width: 1200px) { .adsens_responsive { width: 970px; height: 90px; } }
-
-.adsenseFootDefault,.adsenseHeadDefault{
-/*text-align:center;*/
+.adsens_responsive { 
+	margin-top: 20px;
+    margin-bottom: 20px;
+    /*box-shadow: 2px 4px 4px;*/
+}
+.adsens_responsive { 
+	width: 320px; 
+	height: 100px; 
+}
+@media(min-width: 500px) { 
+	.adsens_responsive { 
+		width: 468px; 
+		height: 60px; 
+	} 
+}
+@media(min-width: 800px) { 
+	.adsens_responsive { 
+		width: 728px; 
+		height: 90px; 
+	} 
+}
+@media(min-width: 1200px) { 
+	.adsens_responsive { 
+		width: 970px; height: 90px; 
+	} 
 }
