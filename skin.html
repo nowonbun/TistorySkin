@@ -65,7 +65,7 @@
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#" onclick="menu('left')"><span class="menuSpan">MENU</span></a> 
 				<a class="navbar-brand title" href="/"><span>[##_title_##]</span></a>
-				<a class="navbar-brand" href="#" onclick="menu('right')"><span class="menuSpan">LIST</span></a>
+				<!--<a class="navbar-brand" href="#" onclick="menu('right')"><span class="menuSpan">LIST</span></a>-->
 			</div>
 		</nav>
 	</header>
@@ -97,34 +97,10 @@
 			</ul>
 		</div>
 		<div class="side-list">
-			<ul class="side-nav"></ul>
+			[##_category_list_##]
 		</div>
-		<!--div class="side-footer bs-glyphicons">
-			<ul class="bs-glyphicons-list">
-				<li onclick="login();" class='logout on'>
-					<span class="glyphicon glyphicon-log-in" aria-hidden="true" title="로그인"></span>
-					<span>로그인</span>
-				</li>
-				<li onclick="logout();" class='login off'>
-					<span class="glyphicon glyphicon-log-out" aria-hidden="true" title="로그인"></span>
-					<span>로그아웃</span>
-				</li>
-				<li onclick="addLink();" class='login off'>
-					<span class="glyphicon glyphicon-list-alt" aria-hidden="true" title="링크추가"></span>
-					<span>링크추가</span>
-				</li>
-				<li onclick="writeTistory();" class='admin off'>
-					<span class="glyphicon glyphicon-leaf" aria-hidden="true" title="글쓰기"></span>
-					<span>글쓰기</span>
-				</li>
-				<li onclick="adminTistory();" class='admin off'>
-					<span class="glyphicon glyphicon-cog" aria-hidden="true" title="관리"></span>
-					<span>관리</span>
-				</li>
-			</ul>
-		</div-->
 	</aside>
-	<aside id="rightside">
+	<!--<aside id="rightside">
 		<h2 class="side-header">
 			<a href="#" onclick="menu('close');">
 				<span class="glyphicon glyphicon-remove" aria-hidden="true" title="메뉴닫기"></span>
@@ -168,7 +144,7 @@
 				<li></li>
 			</ol>
 		</div>
-	</aside>
+	</aside>-->
 	<section class="backgroundLayout" onclick="menu('close');"></section>
 	<main role="main" class="off">
 	<!-- start:main -->
@@ -335,6 +311,8 @@
 							<script>
 							(adsbygoogle = window.adsbygoogle || []).push({});
 							</script>
+							<!-- 최신 글 타겟팅 -->
+							<div class="recent-post-target"></div>
 							<!-- 블로그 글 -->
 							<!-- 2-8-3. 글 관련 태그 -->
 							<s_tag_label>
@@ -461,25 +439,28 @@
 	</footer>
 	<!-- end:footer -->
 	<section style="display: none" id="template">
-		<div id="categoryTemplate">[##_category_list_##]</div>
 		<div id="blogImage">[##_image_##]</div>
 		<div id="loginstate"></div>
-		<s_sidebar>
-			<s_sidebar_element>
-				<!-- 최근에 올라온 글 -->
-				<div class="recentPost">
-					<h3>최근에 올라온 글 </h3>
-					<ul>
-						<s_rctps_rep>
-							<li>
-								<a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##].</a> 
-								<span class="cnt">[##_rctps_rep_rp_cnt_##]</span>
-							</li>
-						</s_rctps_rep>
-					</ul>
-				</div>
-			</s_sidebar_element>
-		</s_sidebar>
+		<div class="recent-post">
+			<s_sidebar>
+				<s_sidebar_element>
+					<!-- 최근에 올라온 글 -->
+					<div class="recentPost another_category">
+						<h4>최근에 올라온 글 </h4>
+						<table>	
+							<tbody>
+								<s_rctps_rep>
+									<tr>
+										<th><a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a></th>
+										<td><span class="cnt">[##_rctps_rep_rp_cnt_##]</span></td>
+									</tr>
+								</s_rctps_rep>
+							</tbody>
+						</table>
+					</div>
+				</s_sidebar_element>
+			</s_sidebar>
+		</div>
 	</section>
 	<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 	<!-- javascript link -->

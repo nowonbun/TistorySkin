@@ -60,36 +60,13 @@ $(window).resize(function(){
 }*/
 /*메뉴 만들기*/
 function initMenu(){
-	/*카테고리 메뉴 생성*/
-	$("ul.side-nav").html($("ul.category_list").html());
 	/*사이드 메뉴 하위가 있을경우 위 아래 이미지생성*/
-	$("div.side-list > ul.side-nav > li > ul").parent().children("a").append("<a href='#' class='glyphicon glyphicon-triangle-bottom pull-right' aria-hidden='true'></a>");
+	$("ul.category_list > li > ul").parent().children("a").append("<a href='#' class='glyphicon glyphicon-triangle-bottom pull-right' aria-hidden='true'></a>");
 	/*사이드 메뉴 하위가 있을경우 위 아래 이미지생성 url 제거*/
-	$("div.side-list > ul.side-nav > li > ul").parent().children("a").prop("href","javascript:void(0)");
-	$("div.side-list > ul.side-nav > li > ul").parent().children("a").addClass("link-item-collapse");
+	$("ul.category_list > li > ul").parent().children("a").prop("href","javascript:void(0)");
+	$("ul.category_list > li > ul").parent().children("a").addClass("link-item-collapse");
 	/*사이드 메뉴 상위 메뉴 초기화*/
-	changeClassState($("div.side-list > ul.side-nav ul"),false);
-	/*사이드 메뉴에서 아이콘 메뉴 활성화 처리*/
-	if($("div.tistorytoolbar").hasClass("tt_menubar_login")){
-		/*비로그인시*/
-		changeClassState($("ul.bs-glyphicons-list > li.logout"),true);
-		changeClassState($("ul.bs-glyphicons-list > li.login"),false);
-		changeClassState($("ul.bs-glyphicons-list > li.admin"),false);
-		$("div#loginstate").addClass("logout");
-	}else{
-		/*로그인시*/
-		changeClassState($("ul.bs-glyphicons-list > li.logout"),false);
-		changeClassState($("ul.bs-glyphicons-list > li.login"),true);
-		changeClassState($("ul.bs-glyphicons-list > li.admin"),false);
-		$("div#loginstate").addClass("login");
-		$("a.tt_menubar_link").each(function(){
-			/*관리자 일경우*/
-			if($(this).attr("href") === myUrl){
-				$("div#loginstate").addClass("admin");
-				changeClassState($("ul.bs-glyphicons-list > li.admin"),true);
-			}
-		});
-	}
+	changeClassState($("ul.category_list > li > ul"),true);
 }
 /*사이드 메뉴에서 서브리스트-누르면 들어가고 누르면 나오는 구조*/
 function openSublist(obj){
@@ -130,7 +107,7 @@ function initAside(){
 	$("aside#leftside h2.side-header > img").prop("src",$("div#blogImage").html());
 
 	sideLeftOff();
-	sideRightOff();
+	//sideRightOff();
 	sideBackOff();
 }
 /* 메인 초기 설정*/
@@ -152,20 +129,20 @@ function initMain(){
 function menu(state){
 	if(state === "close"){
 		sideLeftOff();
-		sideRightOff();
+		//sideRightOff();
 		sideBackOff();
 		return;
 	}
 	if(!isMobile()){
 		if($("aside#leftside").hasClass("on")){
 			sideLeftOff();
-			sideRightOff();
+			//sideRightOff();
 			sideBackOff();
 			return;
 		}
 		sideBackOn();
 		sideLeftOn();	
-		sideRightOn();
+		//sideRightOn();
 		return;
 	}
 	if(state === "left"){
@@ -178,7 +155,7 @@ function menu(state){
 		sideLeftOn();	
 		return;
 	}
-	if(state === "right"){
+	/*if(state === "right"){
 		if($("aside#rightside").hasClass("on")){
 			sideRightOff();
 			sideBackOff();
@@ -187,7 +164,7 @@ function menu(state){
 		sideBackOn();
 		sideRightOn();
 		return;
-	}
+	}*/
 }
 function sideBackOn(){
 	changeClassState($("section.backgroundLayout"),true);
@@ -211,9 +188,9 @@ function sideBackOff(){
 function sideLeftOff(){
 	changeClassState($("aside#leftside"),false);
 }
-function sideRightOff(){
+/*function sideRightOff(){
 	changeClassState($("aside#rightside"),false);
-}
+}*/
 /*사이드바 생길 때 처리*/
 function sideLeftOn(){
 	/*하단 아이콘처리*/
@@ -225,9 +202,9 @@ function sideLeftOn(){
 	}*/
 	changeClassState($("aside#leftside"),true);
 }
-function sideRightOn(){
+/*function sideRightOn(){
 	changeClassState($("aside#rightside"),true);
-}
+}*/
 /*클래스 상태 변경*/
 function changeClassState(dom,state){
 	if(dom.hasClass("on")){
@@ -284,7 +261,8 @@ function isMobile(){
 }
 /*오른쪽 사이드메 글 생성*/
 function initList(){
-	$("section#template div.recentPost ul > li").each(function(index){
+	$(".recent-post-target").html($(".recent-post").html());
+	/*$("section#template div.recentPost ul > li").each(function(index){
 		if(index < rightsideListCount){
 			html = "<a class='recentlyPost' href='"+$(this).children("a").prop("href")+"'>"+$(this).children("a").html()+"</a>";
 			$("aside#rightside div#recentList ol > li:nth-child("+(index+1)+")").html(html);
@@ -295,7 +273,7 @@ function initList(){
 			html = "<a class='anotherPost' href='"+$(this).children("a").prop("href")+"'>"+$(this).children("a").html()+"</a>";
 			$("aside#rightside div#categoryList ol > li:nth-child("+(index+1)+")").html(html);
 		}
-	});
+	});*/
 }
 /*최초 댓글 닫기*/
 function initComment(){
