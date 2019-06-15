@@ -22,12 +22,12 @@ var post = function (obj) {
                 .append("&nbsp;[이미지 보기]"));
             $parent.addClass("image-view");
         });*/
-        $("code").each(function () {
+        /*$("code").each(function () {
             $(this).before($("<div class='code-title'></div>").append($("<i class='fa fa-minus-square code-collapse' style='margin-right:10px;'></i>"))
                 .append("&nbsp;[소스 보기]&nbsp;" + $(this).data("type")));
             $(this).parent().addClass("code-view");
-        });
-        $(document).on("click", ".code-title", function () {
+        });*/
+        /*$(document).on("click", ".code-title", function () {
             $this = $(this);
             $i = $this.find("i.code-collapse");
             if ($i.hasClass("fa-plus-square")) {
@@ -39,7 +39,7 @@ var post = function (obj) {
                 $i.addClass("fa-plus-square");
                 $this.parent().addClass("code-view-disabled");
             }
-        });
+        });*/
         /*$(document).on("click", ".image-title", function () {
             $this = $(this);
             $i = $this.find("i.code-collapse");

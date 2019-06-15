@@ -365,7 +365,7 @@ ul.category_list > li > a{
 	padding:5px;
 	padding-top:12px;
 	padding-bottom:3px;
-	font-size:15px;
+	font-size:18px;
 }
 /*사이드바 메뉴리스트 상위 메뉴 드롭 버튼 ▼▲*/
 ul.category_list > li > a > a{
@@ -397,7 +397,7 @@ ul.category_list > li > ul > li > a{
 	padding:5px;
 	padding-top:5px;
 	padding-bottom:3px;
-	font-size:12px;
+	font-size:15px;
 }
 /*사이드바 메뉴리스트 하위 아이콘 (스크롤바 버그 수정)*/
 div.side-footer div.bs-glyphicons{
@@ -771,9 +771,22 @@ div.widget-footer td {
 /*******************
 *    아이템 처리
 ********************/
+div.sourcecode{
+	box-shadow: 2px 4px 8px;
+    margin: 10px 0px;
+}
+div.sourcecode:before {
+    content: "[소스보기]";
+    color: #fff;
+    background: #777777;
+    display: block;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+}
 div.sourcecode > div > div{
-	margin:0px!important;
- 	font-size :14px!important;
+	margin: 5px 0px!important;
+ 	font-size :13px!important;
 	padding:1px!important;
 } 
 p.image{
@@ -791,7 +804,9 @@ div.adsenseHead,
 div.adsenseFoot{
 	margin:20px 0px;
 }
-
+div.sourcecode > textarea {
+	display: none;
+}
 /*****************
 * 리스트 이미지 사이즈 조정
 ******************/
