@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://tistory.github.io/document-tistory-skin/common/index.xml.html -->
 <skin>
 	<information>
 		<name>nowonbun</name>
@@ -45,7 +46,7 @@
 			<activeColor>000000</activeColor>
 			<activeBgColor>eeeeee</activeBgColor>
 			<labelLength>30</labelLength>
-			<showValue>0</showValue>
+			<showValue>1</showValue>
 			</tree>
 		<contentWidth>700</contentWidth>
 	</default>

@@ -43,10 +43,14 @@ body, header, footer{
 		margin-right: 0px;
 		margin-left: 0px;
 	}
-	.post-article{
-		margin: 0px -10px;
+	div#content{
+		padding-left: 3px!important;
+		padding-right: 3px!important;
 	}
-	.titleWrap h2, main div.title{
+	/*.post-article{
+		margin: 0px -10px;
+	}*/
+	.titleWrap h2, main h1.title{
 		font-size: 2.2rem;
 	}
 	main div.article {
@@ -78,8 +82,8 @@ body, header, footer{
 	div.searchList h3,
 	div.searchList h3>span:before,
 	div.searchList h3>span:after,
-	article > div.searchListEntity > div.list-body a.list-link > h3,
-	div.searchList h3>span{
+	article > div.searchListEntity > div.list-body a.list-link > h1,
+	div.searchList h1>span{
 		font-size:1.5rem;
 	}
 	pre{
@@ -130,9 +134,9 @@ body, header, footer{
 	.container{
 		width: 100%;
 	}
-	div.content{
+	/*div.content{
 		padding: 0px;
-	}
+	}*/
 }
 @media screen and (min-width: 870px) {
 	.container {
