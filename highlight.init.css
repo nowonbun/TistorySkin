@@ -49,3 +49,7 @@ code {
         font-size: 7pt;
     }
 }
+
+.hljs-meta {
+    color: #5cb85c!important;
+}
