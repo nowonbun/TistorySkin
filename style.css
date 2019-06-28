@@ -642,6 +642,10 @@ div.guestWrite input[type=password]{
 main div.article h3 {
     font-size: 18px;
 }
+main div.article blockquote{
+    font-size: 15.5px;
+    padding: 5px 10px;
+}
 /*******************
 * 댓글,방명록 처리
 ********************/
