@@ -639,6 +639,9 @@ div.commentSet input[type=password],
 div.guestWrite input[type=password]{
 	margin-bottom: 5px;
 }
+main div.article h3 {
+    font-size: 18px;
+}
 /*******************
 * 댓글,방명록 처리
 ********************/
