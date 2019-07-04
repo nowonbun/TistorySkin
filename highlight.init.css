@@ -55,5 +55,5 @@ code {
 }
 
 .hljs-comment{
-    color: #008000;
+    color: #008000;!important
 }
