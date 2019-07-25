@@ -7,7 +7,7 @@
 	src: url('childpaper.woff') format('truetype');
 }*/
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');*/
 body{
 	font-family: 'Noto Sans KR', sans-serif;
 }
@@ -113,6 +113,13 @@ body, header, footer{
 		font-size: 7px;
 		line-height: 20px;
 	}
+    .article h2>b {
+        padding: 5px;
+        font-size: 1.5rem;
+    }
+    blockquote p {
+        font-size: 1.0rem;
+    }
 }
 /*******************
 *    브라우저 처리

@@ -49,3 +49,11 @@ code {
         font-size: 7pt;
     }
 }
+
+.hljs-meta {
+    color: #5cb85c!important;
+}
+
+.hljs-comment{
+    color: #008000;!important
+}

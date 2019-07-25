@@ -233,6 +233,9 @@ article p, .article p {
 	margin-bottom: 5px!important;
 	line-height: 25px;
 }
+blockquote p{
+    font-size: 14px;
+}
 /*******************
 *   왼쪽 사이드 처리
 ********************/
@@ -638,6 +641,24 @@ div.guestWrite input[type=text],
 div.commentSet input[type=password],
 div.guestWrite input[type=password]{
 	margin-bottom: 5px;
+}
+main div.article h3 {
+    font-size: 18px;
+}
+main div.article blockquote{
+    font-size: 15.5px;
+    padding: 5px 10px;
+}
+.article h2>b {
+    border: 1px solid silver;
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    background: #f5f5f5;
+}
+.article h2>b>span {
+    border-left: 5px solid black;
+    padding-left: 10px;
 }
 /*******************
 * 댓글,방명록 처리

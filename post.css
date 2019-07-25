@@ -130,6 +130,16 @@ div.image-view img {
     transition: height 2s;
 }
 
+div.table-responsive{
+    box-shadow: 1px 2px 4px;
+    margin: 15px 0px;
+    border-radius: 5px;
+}
+
+div.table-responsive table{
+    margin:0px;
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
     .modal-content {
