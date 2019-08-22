@@ -181,10 +181,14 @@ body, header, footer{
 		height: 100%!important;
 		padding-bottom: 60px;
 	}
-	section.paging{
+	/*section.paging{
 		width:1050px;
 		margin-left:300px;
 		padding-top: 10px;
+	}*/
+	nav.paging{
+		width:1050px;
+		margin-left:300px;
 	}
 	body{
 		width: 1370px;

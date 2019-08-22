@@ -16,20 +16,27 @@ initComment();
 /*initFooter();*/
 $(function(){
 	initMenu();
-	preWidth = $(window).width();
+	/*preWidth = $(window).width();*/
 	$(document).on("click", ".link-item-collapse", function(){
 		openSublist($(this).children("a"));
 	});
+	//　페이징 Active(2019/08/06)
+	$("nav.paging span.selected").closest("li").addClass("active");
 })
+$(window).resize(function(){
+	if($(window).width() >= 1370 && $("aside#leftside").hasClass("on")){
+		menu('close');
+	}
+});
 
 /*onResize*/
-$(window).resize(function(){
+/*$(window).resize(function(){*/
 	/*initLogo();*/
-	initAside();
-	initMain();
+	/*initAside();*/
+	/*initMain();*/
 	/*initListRate();*/
-	preWidth = $(window).width();
-});
+	/*preWidth = $(window).width();
+});*/
 /*애드센스 적용*/
 /*function initAdsense(){
 	adheader = $("div#adsenseHeader").html();

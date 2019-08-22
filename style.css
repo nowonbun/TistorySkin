@@ -230,7 +230,8 @@ article > div.searchListEntity > a.t-photo img{
 	height:100%;
 }
 article p, .article p {
-	margin-bottom: 5px!important;
+	/*margin-bottom: 5px!important;*/
+	margin-bottom: 0px!important;
 	line-height: 25px;
 }
 blockquote p{
@@ -754,22 +755,22 @@ div.commentList{
 /*******************
 *   페이징 처리
 ********************/
-section.paging{
+nav.paging{
 	text-align:center;
-    font-size: 20px;
-	margin-bottom:15px;
+    /*font-size: 20px;
+	margin-bottom:15px;*/
 }
-section.paging  a{
+/*section.paging  a{
 	text-decoration:none;
 }
 section.paging > a{
 	margin:0px 10px;
 	color:#222;
 	font-size: 1.2rem;
-	/*top:4px;*/
+	/*top:4px;
 }
 section.paging > span.numbox > a.num > .selected{
-	/*color: black;*/
+	/*color: black;
     cursor: default;
     text-decoration: none;
     font-weight: bold;
@@ -780,7 +781,9 @@ section.paging > span.numbox > a.num > .selected{
     color: #fff;
 }
 section.paging  .no-more-prev,
-section.paging .no-more-next{
+section.paging .no-more-next,*/
+ul.pagination .no-more-prev,
+ul.pagination .no-more-next{
 	display:none;
 }
 /*section.paging > span.numbox > span.selected,

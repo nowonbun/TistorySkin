@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="kr">
 <head>
-<link async href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">-->
 <style type="text/css">
+@font-face { 
+	font-family: 'Noto Sans KR';
+	src: url('https://nowonbun.github.io/nowonbunfont/NotoSansKR-Regular.otf') format('opentype');
+	font-style:normal;
+	font-weight:normal;
+}
 body{
 	font-family: 'Noto Sans KR', sans-serif;
 }
@@ -426,15 +432,23 @@ body{
 	</main>
 	<!-- ************************2-9. 페이징************************ -->
 	<s_paging>
-		<section class="paging">
-		<a [##_prev_page_##] class='glyphicon glyphicon-backward [##_no_more_prev_##]' aria-hidden='true' title='prev'></a>
-	 		<span class="numbox"> 
-				<s_paging_rep> 
-					<a [##_paging_rep_link_##] class="num">[##_paging_rep_link_num_##]</a> 
+		<nav class="paging" aria-label="Page navigation">
+			<ul class="pagination">
+				<li [##_prev_page_##] class="[##_no_more_prev_##]">
+					<a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				<s_paging_rep>
+					<li><a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a></li>
 				</s_paging_rep>
-			</span> 
-		<a [##_next_page_##] class='glyphicon glyphicon-forward [##_no_more_next_##]' aria-hidden='true' title='next'></a>
-		</section>
+				<li [##_next_page_##] class="[##_no_more_next_##]">
+					<a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</s_paging>
 	<!-- ************************2-9. 페이징************************ -->
 	<!-- start:footer -->
@@ -464,7 +478,7 @@ body{
 								<s_rctps_rep>
 									<tr>
 										<th><a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a></th>
-										<td><span class="cnt">[##_rctps_rep_rp_cnt_##]</span></td>
+										<!--<td><span class="cnt">[##_rctps_rep_rp_cnt_##]</span></td>-->
 									</tr>
 								</s_rctps_rep>
 							</tbody>
