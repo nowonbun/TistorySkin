@@ -10,7 +10,7 @@ var myUrl = "http://nowonbunskinex.tistory.com";
 initMain();
 initAside();
 initList();
-initComment();
+/*initComment();*/
 /*initpaging();*/
 /*initListRate();*/
 /*initFooter();*/
@@ -283,12 +283,12 @@ function initList(){
 	});*/
 }
 /*최초 댓글 닫기*/
-function initComment(){
+/*function initComment(){
 	changeClassState($("div.actionTrail ul.nav.nav-tabs.nav-justified a"),false);
 	changeClassState($("div.tab-content"),false);
-}
+}*/
 /*댓글 이벤트*/
-function commnet(){
+/*function commnet(){
 	if($("div.tab-content").hasClass("off")){
 		changeClassState($("div.actionTrail ul.nav.nav-tabs.nav-justified a"),true);
 		changeClassState($("div.tab-content"),true);
@@ -296,7 +296,7 @@ function commnet(){
 		changeClassState($("div.actionTrail ul.nav.nav-tabs.nav-justified a"),false);
 		changeClassState($("div.tab-content"),false);
 	}
-}
+}*/
 /*페이징 만들기*/
 /*function initpaging(){
 	maxdom = $("section.paging > span.numbox > a:nth-last-of-type(1) > span");
