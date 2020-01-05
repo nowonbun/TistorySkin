@@ -146,3 +146,73 @@ div.table-responsive table{
         width: 100%;
     }
 }
+
+.code-copy {
+    float: right;
+    position: relative;
+    right: 10px;
+    padding-top: 2px;
+    font-size: 1.3rem;
+}
+
+.code-copy .fa.fa-copy {
+    margin-right: 5px;
+}
+
+/* 출처 : https://jjisso.tistory.com*/
+/* 공감버튼 조절용 */ 
+.container_postbtn {
+	border: 3px dotted red;
+	width: 250px; 
+	height: 130px;
+	margin: auto; 
+	padding: 10px 10px 10px 10px !important; 
+    margin-top: 20px;
+} 
+.container_postbtn:before {
+	white-space: pre; 
+	overflow-wrap: break-word; 
+	color: red; 
+	font-size: 12px; 
+	font-weight: bold;
+	content: "공감과 댓글은 블로그 운영에 큰 힘이 됩니다.";
+	position: relative; 
+	left:-18;
+}
+
+/* 공감버튼 스타일 */ 
+.container_postbtn .postbtn_like {
+	float: none !important;
+	width: fit-content;
+	margin:auto;
+	border: none !important; 
+} 
+
+/* large empathy */ 
+.postbtn_like .wrap_btn:first-child {
+	width: 100%; text-align: center; float: none !important; margin: 0 auto 24px auto; 
+} 
+.postbtn_like .wrap_btn .ico_like{ 
+	display: block !important;
+	background-size: 432px 144px !important;
+	background-image: url(./likeimg.png);
+	background-position: calc(-36px * 2) calc(-36px * 3) !important;
+	width: 36px !important;
+	height: 36px !important;
+	max-width: 36px !important;
+	margin: 0 auto !important; 
+} 
+.postbtn_like .wrap_btn .empathy_up_without_ani .ico_like { 
+	background-size: 432px 144px !important;
+	background-image: url(./likeimg.png);
+	background-position: calc(-36px * 3) calc(-36px * 3) !important; 
+} 
+.postbtn_like .ico_bar{
+	display:none  !important;
+}
+.container_postbtn .wrap_btn.wrap_btn_share{
+    margin-left: -50px;
+}
+.container_postbtn .wrap_btn.wrap_btn_etc{
+    margin-left: -10px;
+}
