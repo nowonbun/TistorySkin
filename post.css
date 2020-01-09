@@ -216,6 +216,9 @@ div.table-responsive table{
 .container_postbtn .wrap_btn.wrap_btn_etc{
     margin-left: -10px;
 }
+.container_postbtn>.postbtn_like>.wrap_btn:nth-child(2){
+    left:15px;
+}
 .container_postbtn>.postbtn_like>.wrap_btn:nth-child(4) {
     top: 60px;
     left: -50px;
