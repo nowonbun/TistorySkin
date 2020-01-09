@@ -216,3 +216,18 @@ div.table-responsive table{
 .container_postbtn .wrap_btn.wrap_btn_etc{
     margin-left: -10px;
 }
+.container_postbtn>.postbtn_like>.wrap_btn:nth-child(4) {
+    top: 60px;
+    left: -50px;
+}
+.container_postbtn .postbtn_like .wrap_btn:nth-child(5) {
+    top: 60px;
+    left: -50px;
+}
+.container_postbtn .postbtn_like .wrap_btn:nth-child(6) {
+    top: 60px;
+    left: -10px;
+}
+.container_postbtn .postbtn_ccl {
+    top: 60px;
+}
