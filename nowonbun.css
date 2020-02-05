@@ -91,6 +91,7 @@ body, header, footer{
 	}
 	.hljs {
 		padding:0px;
+		width: 100%;
 	}
 	.hljs-ln-line{
 		margin-left:0px;
@@ -120,6 +121,9 @@ body, header, footer{
     blockquote p {
         font-size: 1.0rem;
     }
+	.hljs-ln-code .hljs-ln-line {
+		white-space: pre;
+	}
 }
 /*******************
 *    브라우저 처리
