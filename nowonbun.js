@@ -74,6 +74,7 @@ function initMenu(){
 	$("ul.category_list > li > ul").parent().children("a").addClass("link-item-collapse");
 	/*사이드 메뉴 상위 메뉴 초기화*/
 	changeClassState($("ul.category_list > li > ul"),true);
+    $(".container_postbtn>.postbtn_like>.wrap_btn:nth-child(4) button span").removeClass("ico_postbtn");
 }
 /*사이드 메뉴에서 서브리스트-누르면 들어가고 누르면 나오는 구조*/
 function openSublist(obj){

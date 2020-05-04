@@ -924,7 +924,15 @@ div.sourcecode > textarea {
 body {
     background-color:#e1ffdf!important;
 }
-.entry{
+.entry {
     background-color: #ffffff;
 }
-
+.btn_menu_toolbar.btn_subscription {
+    float: left;
+    top: 85px;
+    position: absolute;
+    left: 150px;
+}
+.container_postbtn.btn_menu_toolbar.txt_state {
+    font-size: 0px!important;
+}

@@ -225,7 +225,7 @@ div.table-responsive table{
 }
 .container_postbtn .postbtn_like .wrap_btn:nth-child(5) {
     top: 60px;
-    left: -50px;
+    left: -25px;
 }
 .container_postbtn .postbtn_like .wrap_btn:nth-child(6) {
     top: 60px;
@@ -233,4 +233,12 @@ div.table-responsive table{
 }
 .container_postbtn .postbtn_ccl {
     top: 60px;
+}
+/*2020.05.04 추가*/
+.container_postbtn>.postbtn_like>.wrap_btn:nth-child(4) button {
+    font-size: 13px!important;
+    border: 1px solid rgba(185,185,185,.5);
+    border-radius: 16px;
+    padding: 15px;
+    margin: -5px;
 }
