@@ -104,7 +104,10 @@ span.menuSpan:hover{
 ********************/
 /*본문 리스트(검색결과)*/
 div.searchList{
-	border-bottom:1px solid #ccc;
+	/*border-bottom:1px solid #ccc;*/
+    padding: 10px 0px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px;
 }
 /*본문 리스트(검색결과)*/
 div.searchList h1{
@@ -257,7 +260,8 @@ section.backgroundLayout.on{
 aside#leftside{
 	position:fixed;
 	width:300px;
-	background-color:rgba( 255, 255, 255, 1 );
+	/*background-color:rgba( 255, 255, 255, 1 );*/
+    background-color:#ffffff;
 	z-index: 1001;
 	/*transition: left 50ms linear;*/
 	border:1px solid #000;
@@ -805,6 +809,7 @@ footer > div.footer-bottom{
 	color: #000;
 	box-shadow: 0px -2px 4px;
 	padding-top:10px;
+    background-color: #ffff;
 }
 /*푸터 저작권 및 카운팅*/
 footer > div.footer-bottom > p{
@@ -914,3 +919,12 @@ div.sourcecode > textarea {
 		width: 970px; height: 90px; 
 	} 
 }
+
+/*2020.05.04 추가*/
+body {
+    background-color:#e1ffdf!important;
+}
+.entry{
+    background-color: #ffffff;
+}
+

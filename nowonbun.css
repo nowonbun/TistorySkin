@@ -134,7 +134,8 @@ body, header, footer{
 		/*-webkit-filter:blur(1px);*/
 	}
 	.post-article{
-		box-shadow:1px 1px 3px;
+		/*box-shadow:1px 1px 3px;*/
+        box-shadow:2px 2px 6px;
 		padding:10px;
 	}
 	/*main div#main{
