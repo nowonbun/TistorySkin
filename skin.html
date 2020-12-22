@@ -125,7 +125,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</li>
 			</ul>
 		</div>
-		<div style="font-size: 7pt;text-align: right;padding-right: 10px;">접속 시간 : <span id="currentDate"></span><br /> 페이지 리로딩 시간 : <span id="timeReload">-:--</span></div>
+		<div style="font-size: 7pt;text-align: right;padding-right: 10px;">접속 시간 : <span id="currentDate"></span><input type="button" style="display:none;" id="eventHit" onclick="ga('send', 'event', 'analysis', 'reflesh-tag', '5 min', Number(location.pathname.substring(1)));" value="refresh"></div>
 		<script>
 		$(function(){
 		    try {
@@ -136,11 +136,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		    }
 		    setInterval(function(){
 		        try {
-		            let reloadtime = 300;
+		            let reloadtime = 10;
 		            let caldate = reloadtime - Math.round((new Date()-$("#currentDate").data('tick')) / 1000);
 		            $("#timeReload").html(Math.floor(caldate/60) + ":" + (caldate%60));
 		            if(caldate <= 0){
-                		location.reload();
+                		$("#currentDate").data('tick', new Date().getTime());
+		                $("#eventHit").trigger("click");
+		                ga('send', 'event', 'analysis', 'reflesh-script', '5 min', Number(location.pathname.substring(1)));
 		            }
 		        } catch (e) {
 		            console.log(e);
