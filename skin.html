@@ -125,12 +125,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</li>
 			</ul>
 		</div>
-		<div style="font-size: 7pt;text-align: right;padding-right: 10px;">접속 시간 : <span id="currentDate"></span><input type="button" style="display:none;" id="eventHit" onclick="ga('send', 'event', 'analysis', 'reflesh-tag', '5 min', Number(location.pathname.substring(1)));" value="refresh"></div>
+		<div style="font-size: 7pt;text-align: right;padding-right: 10px;">접속 시간 : <span id="currentDate"></span></div>
 		<script>
 		$(function(){
 		    try {
 		        $("#currentDate").html(moment(new Date()).format('YYYY/MM/DD HH:mm:ss'));
 		        $("#currentDate").data('tick', new Date().getTime());
+		        $("#currentDate").data('connecttick', new Date().getTime());
 		    } catch (e) {
 		        console.log(e);
 		    }
@@ -140,9 +141,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		            let caldate = reloadtime - Math.round((new Date()-$("#currentDate").data('tick')) / 1000);
 		            $("#timeReload").html(Math.floor(caldate/60) + ":" + (caldate%60));
 		            if(caldate <= 0){
-                		$("#currentDate").data('tick', new Date().getTime());
-		                $("#eventHit").trigger("click");
-		                ga('send', 'event', 'analysis', 'reflesh-script', '5 min', Number(location.pathname.substring(1)));
+		                $("#currentDate").data('tick', new Date().getTime());
+		                let currentdate = moment($("#currentDate").data('tick')).format('YYYY/MM/DD HH:mm:ss');
+		                ga('send', { hitType: 'event', eventCategory: 'analysis', eventAction: 'reflesh', eventLabel: 'reflesh' });
 		            }
 		        } catch (e) {
 		            console.log(e);
