@@ -51,7 +51,7 @@ var post = function (obj) {
             }
             toastr.success(null,"소스가 복사되었습니다.", {timeOut: 700});
             var code_element = $(this).closest("pre").find("code")[0];
-            var value = code_element.innerText.replace(/\n\n\n/ig, '').replace('    \n','');
+            var value = code_element.innerText.replace(/\n\n\n/ig, '').replace('    \n','').replace(/\t\n/gi,'\n');
             var selection = window.getSelection();
             var body_element = document.getElementsByTagName('body')[0];
             var newdiv = document.createElement('div');
